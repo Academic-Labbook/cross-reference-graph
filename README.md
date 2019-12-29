@@ -2,19 +2,25 @@
 Generate a graph of your posts' cross-references.
 
 ![Graph example](https://user-images.githubusercontent.com/5225190/71555417-fae8bc80-2a23-11ea-8e6c-9d01151bf82f.png)
+
 *[Larger version (PDF)](https://github.com/Academic-Labbook/cross-reference-graph/files/4007962/graph.gv.pdf)*
 
 [Academic Labbook Plugin](https://github.com/Academic-Labbook/alp) has a feature whereby it tracks links between posts ("cross-references"). These can be nicely visualised with a [directed graph](https://en.wikipedia.org/wiki/Graph_%28discrete_mathematics%29). This is a small script that produces an input file for [graphviz](https://www.graphviz.org/) which then produces a graph showing connections between posts.
 
 ## Prerequisites
+On your computer:
+
  - Python 3
  - Graphviz
- - python-graphviz
- - ALP (on WordPress server)
- - WP-CLI (on WordPress server)
+ - python-graphviz (`pip install graphviz`)
+
+On your WordPress web server:
+
+ - [ALP](https://alp.attackllama.com/documentation/installation/)
+ - [WP-CLI](https://wp-cli.org/)
 
 ## Instructions
-You must run a command on your web server to generate a database dump, then copy and modify the example for the [LIGO aLOG](https://alog.ligo-wa.caltech.edu/aLOG/).
+You must run a command on your web server using WP-CLI to generate a database dump, then copy and modify the example for the [LIGO aLOG](https://alog.ligo-wa.caltech.edu/aLOG/).
 
 Run the following command on your server using WP-CLI...
 
